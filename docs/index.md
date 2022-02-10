@@ -11,4 +11,4 @@ The general approach for this documentation is that each technology has its own 
 * [Ethereum](ethereum.md)
 * [Solidity](solidity.md)
 * [Remix](remix.md)
-* [Javascript]
+* [Javascript](javascript.md)
