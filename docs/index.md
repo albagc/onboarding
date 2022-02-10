@@ -9,6 +9,7 @@ The general approach for this documentation is that each technology has its own 
 
 * [Metamask](metamask.md)
 * [Ethereum](ethereum.md)
+* [Decentralised file storage](decen_file_storage.md)
 * [Solidity](solidity.md)
 * [Remix](remix.md)
 * [Javascript](javascript.md)
