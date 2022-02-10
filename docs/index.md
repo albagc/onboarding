@@ -1,5 +1,3 @@
-# SMARDY Onboarding
-
 ## Getting started
 
 * [Opening GitHub repo in VS code](https://docs.microsoft.com/en-us/visualstudio/get-started/tutorial-open-project-from-repo?view=vs-2022)
@@ -9,6 +7,7 @@ The general approach for this documentation is that each technology has its own 
 
 ## Technology resource pages
 
+* [Metamask](metamask.md)
 * [Solidity](solidity.md)
 * [Remix](remix.md)
-
+* [Javascript]
