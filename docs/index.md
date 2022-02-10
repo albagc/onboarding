@@ -8,6 +8,7 @@ The general approach for this documentation is that each technology has its own 
 ## Technology resource pages
 
 * [Metamask](metamask.md)
+* [Ethereum](ethereum.md)
 * [Solidity](solidity.md)
 * [Remix](remix.md)
 * [Javascript]
