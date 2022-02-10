@@ -3,6 +3,7 @@
 
 Today, resources are allocated in a certain url address, hosted in a certain server. This **_location based addressing_** system is centralized, and it exposes the whole file storage online system to the threats related to centralisation: single-point cyberattacks, data monopoly, <a href="https://www.nytimes.com/2020/01/15/world/europe/turkey-wikipedia-access-restored.html" target="_blank"> censorship</a>, etc.
 
+### IPFS
 The InterPlanetary File System aims to build a distributed internet. The paradigm changes to a **_content based addressing_**. It is a protocol for decentralized file management created by <a href="https://protocol.ai/" target="_blank">Protocol Labs</a>, publishing the first release in 2015. 
 
 One file X has a specific **hash** $H_X$. When user A wants file X, it requests it to the IPFS network. The file Y arrives, and user A, knowing on beforehand the (X,$H_X$) pair, checks if $H_Y = H_X$.
@@ -24,8 +25,6 @@ Nonetheless, IFPS has still limitations regarding the file availability depends 
 - Swarm: runs on tops of Ethereum's smart contracts infraestructure. 
 - Sia: 
 - Storj: separates parts of the file among users of the network, encripting them before sharing and spreading them on the network.
-
-
 ### SWARM
 It is worth to mention Swarm, a protocol part of the Ethereum vision, where <a href="" target="_blank">Ethereum</a> would provide the computational resources, <a href="" target="_blank"> Swarm </a> the storage system and <a href="" target="_blank"> Whisper</a> a messaging layer.
 
