@@ -13,3 +13,5 @@ The general approach for this documentation is that each technology has its own 
 * [Solidity](solidity.md)
 * [Remix](remix.md)
 * [Javascript](javascript.md)
+
+See also our [**Glossary of terms**](Glossaryofterms.md).
