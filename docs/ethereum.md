@@ -86,12 +86,14 @@ Many different test networks for the Ethereum blockchain exist, and they have di
 
 Smart contracts are executed by the Ethereum Virtual Machine (EVM)](#ethereuem-virtual-machine). 
 
-Transactions are messages sent from one account to another, and can contain binary data and Ether. If the target account is a contract account (one that contain code), the code is run and the binary data is used as the input.
+Blockchain transactions are messages sent from one account to another, and can contain binary data and Ether. If the target account is a contract account (one that contains code), the code contained in the target account is run and the binary data is used as the input.
 
-_To create a new contract, you must send code that returns the code of the contract you want, rather than just the code of the contract._ This is because when the target account is not set, the transaction creates a new contract by executing the binary data contained in the transaction. The output of this execution is then stored as the code of the contract.
+_To create a new contract, you must send code that returns the code of the contract you want, rather than just the code of the contract._ This is because when the target account is not set, the transaction creates a new contract by executing the binary data contained in the transaction. The output of this execution is then stored as the code of the contract. Note that while the contract is being created, the target address for that contract is empty. Be sure not to call the contract before it is fully created.
 
 ## Ethereuem virtual machine
 
 > The Ethereum Virtual Machine or EVM is the runtime environment for smart contracts in Ethereum. It is not only sandboxed but actually completely isolated, which means that code running inside the EVM has no access to network, filesystem or other processes. Smart contracts even have limited access to other smart contracts.
 
 See [here](https://ethereum.org/en/developers/docs/evm/) for more details.
+
+## Decentralised apps (dApps)
