@@ -39,6 +39,12 @@ There is a minimum amount of crypto that must be staked in order to become a val
 
 In proof of stake, the validators’ staked crypto funds serve as an economic incentive to act in the network’s best interests.
 
+> Variations of the PoS:
+> Proofs of Storage are simple proving systems to prove that I have possession of some data. A Proof of Data Possession example is: I can prove to you that I have data X, either without revealing data X or if the data is several GB large, in some more succinct way. Then there’s Proof of Retrievability where, not only am I going to prove that I have X, but also that these proofs can be used to reconstruct X in case I’m malicious and want to withhold X from you.
+> - Proof of Space: instead of only tokens as stake, stake is in the form of proven storage that determines a miner’s probability of mining a block. In building a decentralized storage network, a proof structure was built in which consensus is achieved through an operation yielding positive social externality: data storage. Proofs of Space are a different type of group where I can guarantee to you that I’m spending a certain amount of storage. If I commit to storing 1 GB, and I generate a random GB then I can prove to you that I’m storing that random GB and not storing some other thing. That lets you use storage space as a Proof of Work.
+> - Proof of Spacetime: variation of Proof-of-space where nodes need to proof that a given encoding of the data existed in physical storage continuously over a period of time.
+> - Proof of Replication: nodes need to proof that they are storing a unique encoding of the data. It is ultimately a proving system to verify that a storage miner actually has the content they are storing and are not cheating.
+
 **Proof of authority (POA)**
 
 Variation of proof of stake model, where rather than an economic stake, validators stake their reputation. 
