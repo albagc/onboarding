@@ -4,14 +4,14 @@
 Today, resources are allocated in a certain url address, hosted in a certain server. This **_location based addressing_** system is centralized, and it exposes the whole file storage online system to the threats related to centralisation: single-point cyberattacks, data monopoly, <a href="https://www.nytimes.com/2020/01/15/world/europe/turkey-wikipedia-access-restored.html" target="_blank"> censorship</a>, etc.
 
 > Useful resources: 
-> - <a href="https://ipfs.io/">Install IPFS</a>
-> - <a href="https://hackernoon.com/a-beginners-guide-to-ipfs-20673fedd3f">What is IPFS? - A Beginner's Guide</a>
+> - <a href="https://ipfs.io/" target="_blank>Install IPFS</a>;
+> - <a href="https://hackernoon.com/a-beginners-guide-to-ipfs-20673fedd3f" target="_blank>What is IPFS? - A Beginner's Guide</a>;
 > - <a href="https://www.youtube.com/watch?v=I5M8bXQR9uA" target="_blank"> What is decentralized storage?</a>;
 > - <a href="https://www.youtube.com/watch?v=5Uj6uR3fp-U&t=112s" target="_blank">IPFS: Interplanetary file storage</a>;
 > - <a href="https://www.youtube.com/watch?v=5Vu_jwPjvww" target="_blank">Decentralized Storage Explained</a>;
 
 Some projects implementing a decentralized file storage platfor or system are:
-- Metanet: it associates a key to each file and a bitcoin address. <a href="https://metanet.mx/" target="_blank"> 🌐 </a>. <a href="https://nchain.com/app/uploads/2019/06/The-Metanet-Technical-Summary-v1.0.pdf"> 📃 </a>
+- Metanet: it associates a key to each file and a bitcoin address. <a href="https://metanet.mx/" target="_blank"> 🌐 </a> <a href="https://nchain.com/app/uploads/2019/06/The-Metanet-Technical-Summary-v1.0.pdf" target="_blank"> 📃 </a>
 - Maidsafe: first autonomous data network, formed by farmers (who take care of the netowork) and clients (upload, buy data, etc.). <a href="https://maidsafe.net/" target="_blank"> 🌐 </a>.
 - Filecoin: <a href="https://filecoin.io/" target="_blank"> 🌐 </a> <a href="https://youtu.be/JgKdBRIyIps" target="_blank"> 📼 </a> <a href="https://docs.filecoin.io/about-filecoin/how-filecoin-works/#the-network" target="_blank"> 📃 </a>.
 - Swarm: runs on tops of Ethereum's smart contracts infraestructure. <a href="https://www.ethswarm.org/" target="_blank"> 🌐 </a> <a href="https://www.ethswarm.org/The-Book-of-Swarm.pdf" target="_blank"> 📃 </a>.
@@ -20,7 +20,7 @@ Some projects implementing a decentralized file storage platfor or system are:
 ### IPFS
 The InterPlanetary File System aims to build a distributed internet. The paradigm changes to a **_content based addressing_**. It is a protocol for decentralized file management created by <a href="https://protocol.ai/" target="_blank">Protocol Labs</a>, publishing the first release in 2015. 
 #### How does it work?
-When you add a file to IPFS, your file is split into smaller chunks, cryptographically hashed, and given a unique fingerprint called a content identifier (CID). This CID acts as an permanent record of your file as it exists at that point in time.
+When you add a file to IPFS, your file is split into smaller chunks, cryptographically hashed, and given a unique fingerprint called a **_content identifier (CID)_**. This CID acts as an permanent record of your file as it exists at that point in time.
 
 When other nodes look up your file, they ask their peer nodes who's storing the content referenced by the file's CID. When they view or download your file, they cache a copy — and become another provider of your content until their cache is cleared.
 
