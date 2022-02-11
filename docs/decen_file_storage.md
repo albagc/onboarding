@@ -9,12 +9,14 @@ Today, resources are allocated in a certain url address, hosted in a certain ser
 > - <a href="https://www.youtube.com/watch?v=I5M8bXQR9uA" target="_blank"> What is decentralized storage?</a>;
 > - <a href="https://www.youtube.com/watch?v=5Uj6uR3fp-U&t=112s" target="_blank">IPFS: Interplanetary file storage</a>;
 > - <a href="https://www.youtube.com/watch?v=5Vu_jwPjvww" target="_blank">Decentralized Storage Explained</a>;
+> - <a href="https://blog.ethereum.org/2014/08/16/secret-sharing-erasure-coding-guide-aspiring-dropbox-decentralizer/" target="_blank">Secret Sharing and Erasure Coding: A Guide for the Aspiring Dropbox Decentralizer</a>;
+
 
 Some projects implementing a decentralized file storage platfor or system are:
 - **Metanet**: it associates a key to each file and a bitcoin address. <a href="https://metanet.mx/" target="_blank"> 🌐 </a> <a href="https://nchain.com/app/uploads/2019/06/The-Metanet-Technical-Summary-v1.0.pdf" target="_blank"> 📃 </a>
 - **Maidsafe**: first autonomous data network, formed by farmers (who take care of the netowork) and clients (upload, buy data, etc.). <a href="https://maidsafe.net/" target="_blank"> 🌐 </a>.
 - **Filecoin**: <a href="https://filecoin.io/" target="_blank"> 🌐 </a> <a href="https://youtu.be/JgKdBRIyIps" target="_blank"> 📼 </a> <a href="https://docs.filecoin.io/about-filecoin/how-filecoin-works/#the-network" target="_blank"> 📃 </a>.
-- **Swarm**: runs on tops of Ethereum's smart contracts infraestructure. <a href="https://www.ethswarm.org/" target="_blank"> 🌐 </a> <a href="https://www.ethswarm.org/The-Book-of-Swarm.pdf" target="_blank"> 📃 </a>.
+- **Swarm**: runs on tops of Ethereum's smart contracts infraestructure. <a href="https://www.ethswarm.org/" target="_blank"> 🌐 </a> <a href="https://www.ethswarm.org/The-Book-of-Swarm.pdf" target="_blank"> 📃 </a> (this is Swarm's white paper, a bit lighter read: <a href="https://docs.ethswarm.org/swarm-whitepaper.pdf" target="_blank"> 📃 </a> )
 - **Storj**: separates parts of the file among users of the network, encripting them before sharing and spreading them on the network. <a href="https://www.storj.io/" target="_blank"> 🌐 </a> <a href="https://youtu.be/JgKdBRIyIps" target="_blank"> 📼 </a>.
 - **Sia**: <a href="" target="_blank"> 🌐 </a>.
 ### IPFS
@@ -29,6 +31,8 @@ A node can pin content in order to keep (and provide) it forever, or discard con
 If you add a new version of your file to IPFS, its cryptographic hash is different, and so it gets a new CID. This means files stored on IPFS are resistant to tampering and censorship — any changes to a file don't overwrite the original, and common chunks across files can be reused in order to minimize storage costs.
 
 However, this doesn't mean you need to remember a long string of CIDs — IPFS can find the latest version of your file using the **_IPNS_** **_Decentralized Naming System (DNS)_**, and DNSLink can be used to map CIDs to human-readable DNS names.
+
+The structure in which IPFS's sharing schema is based, splitting the chunks of information of a single document, is a Merkle Tree, a DAG containing the relations between CIDs. Upon this structure, versioned file systems or apps can be built.
 #### Implementations
 Below are a few interesting projects being built on IPFS:
 - Akasha, a Next-Generation social network
@@ -47,17 +51,28 @@ Nonetheless, IPFS has still limitations regarding the file availability depends 
 
 > In think it would be worthed to take a look at the <a href="https://explore.ipld.io/#/">IPFS Explorer site</a> as an example of proof of concept implementation.
 
-### SWARM
+### Swarm
 It is worth to mention Swarm, a protocol part of the Ethereum vision, where <a href="" target="_blank">Ethereum</a> would provide the computational resources, <a href="" target="_blank"> Swarm </a> the storage system and <a href="" target="_blank"> Whisper</a> a messaging layer.
 
-Swarm is implemented as a proof of concept in Geth. To try it we'll need the Go environment as well. Moreover, an Ethereum account is needed. 
+The primary objective of Swarm is to provide a decentralized and **redundant** store for dapp code and data as well as block chain and state data. Swarm is also set out to provide various base layer services for web3, including node-to-node messaging, media streaming, decentralised database services and scalable state-channel infrastructure for decentralised service economies.
 
 #### How does it work?
+Similarly to IPFS, Swarm is a P2P file storage, transfer and retrieval system. Both of them enable the implementation of applications with HTML or JS. However, Swarm's inception within a native Ethereum framework provides it with a built-in incentivation system (which one of the main IPFS drawbacks). The token in which Swarm inventivization is based on, is the BZZ token, an ERC20-compatible token.
 
+Basically, IPFS and Swarm address the same problem, but they differ in the way they provide the solution. For IPFS, **splitting** and **directionality** are key aspects of its strategy, whereas for Swarm, the key concept is **redundancy**. 
+
+Swarm works similarly to Bittorrent, with the same information replicated in several nodes. This enables the access to a file as long as a single node hosts this piece of data. This paradigm, compared to IPFS, gives Swarm a lower latency time. 
+
+Moreover, within this system, highly retrieved files can be asked to be replicated along more nodes of the network, incenticating the replication of highly requested data. This structure also jumps over the directionality needed in the IPFS system, since it does not depend in a ultimate original root node of the Merkle Tree, as IPFS does.
+
+Swarm implementation also relies on the **Swarm Accounting Protocol (SWAP)**, which ensures that node operators are motivated to collaborate in routing messages, while simultaneously providing protection against frivolous messaging. Swarm incentives are about ensuring that node operators collaborate.
+
+Users can decide to keep their data private, sell it on data markets, or donate it to research institutions of their choice, amongst many other possibilities.
 #### Implementation
 
-#### Limitations and challenges
+Bee is a Swarm client implemented in Go. It’s the basic building block for Swarm Network. Bee provides low level constructs for file storage, feeds, key-value stores and untraceable communication.
 
-> **Geth**
+All the information to implement Swarmd and Bee is very well described in the
+<a href="https://docs.ethswarm.org/docs/" target="_blank">Swarm Bee web page</a>.
 
-We can upload files but without encryption yet. 
+<!--> #### Limitations and challenges <-->
