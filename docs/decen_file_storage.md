@@ -28,7 +28,7 @@ A node can pin content in order to keep (and provide) it forever, or discard con
 
 If you add a new version of your file to IPFS, its cryptographic hash is different, and so it gets a new CID. This means files stored on IPFS are resistant to tampering and censorship — any changes to a file don't overwrite the original, and common chunks across files can be reused in order to minimize storage costs.
 
-However, this doesn't mean you need to remember a long string of CIDs — IPFS can find the latest version of your file using the IPNS decentralized naming system, and DNSLink can be used to map CIDs to human-readable DNS names.
+However, this doesn't mean you need to remember a long string of CIDs — IPFS can find the latest version of your file using the **_IPNS_** **_Decentralized Naming System (DNS)_**, and DNSLink can be used to map CIDs to human-readable DNS names.
 #### Implementations
 Below are a few interesting projects being built on IPFS:
 - Akasha, a Next-Generation social network
@@ -43,7 +43,7 @@ Below are a few interesting projects being built on IPFS:
 It is also being used as a complementary file system for public blockchains and other p2p applications. IPFS is interoperable with smart contracts and blockchain data, so it can add reliable, low-cost storage capacity to the ethereum ecosystem. The attempt to make Ethereum blockchain data natively accessible on IPFS is a separate protocol known as **_IPLD (InterPlanetary Linked Data)_**.
 
 #### Limitations and challenges
-Nonetheless, IFPS has still limitations regarding the file availability depends on the availability of nodes. There is **little incentive** for nodes to maintain long term backups of data on the network. Nodes can choose to clear cached data to save space, meaning theoretically files can end up ‘disappearing’ over time if there are no remaining nodes hosting the data. At current adoption levels this isn’t a significant issue but in the long term, backing up large amounts of data requires strong economic incentives. This can be solved by incentivation (see <a href="https://filecoin.io/" target="_blank">Filecoin</a> project, to try to keep the files as long as possible on the network).
+Nonetheless, IPFS has still limitations regarding the file availability depends on the availability of nodes. There is **little incentive** for nodes to maintain long term backups of data on the network. Nodes can choose to clear cached data to save space, meaning theoretically files can end up ‘disappearing’ over time if there are no remaining nodes hosting the data. At current adoption levels this isn’t a significant issue but in the long term, backing up large amounts of data requires strong economic incentives. This can be solved by incentivation (see <a href="https://filecoin.io/" target="_blank">Filecoin</a> project, to try to keep the files as long as possible on the network).
 
 > In think it would be worthed to take a look at the <a href="https://explore.ipld.io/#/">IPFS Explorer site</a> as an example of proof of concept implementation.
 
