@@ -15,3 +15,8 @@ The general approach for this documentation is that each technology has its own 
 * [Javascript](javascript.md)
 
 See also our [**Glossary of terms**](Glossaryofterms.md).
+
+## Summary of approach
+
+Javascript/HTML/CSS frontend platform, powered by smart contracts developed using Solidity/Remix, with data stored via a IPFS solution.
+
