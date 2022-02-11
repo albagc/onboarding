@@ -8,3 +8,4 @@
 **IPLD**: InterPlanetary Linked Data.
 **IPFS**: InterPlanetary File System.
 **IPNS**: InterPlanetary Naming System.
+**P2P**: Peer-to-peer.
