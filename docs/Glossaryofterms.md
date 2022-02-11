@@ -3,6 +3,7 @@
 **API**: Application programming interface.  
 **CID**: Content Identifier.  
 **DAG**: Directed Acyclic Graph. <a href="https://en.wikipedia.org/wiki/Domain_Name_System"   target="_blank">🌐</a>  
+**dApp**: Decentralised application
 **DNS**: Domain Name System. <!--<a href="" target="_blank">🌐</a> -->  
 **Ξ**: Ehereum symbol  
 **EVM**: Ethereum Virtual Machine  
