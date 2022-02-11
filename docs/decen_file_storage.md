@@ -75,4 +75,6 @@ Bee is a Swarm client implemented in Go. It’s the basic building block for Swa
 All the information to implement Swarmd and Bee is very well described in the
 <a href="https://docs.ethswarm.org/docs/" target="_blank">Swarm Bee web page</a>.
 
+
+A list of projects implementing Swarm and recipients of a Grant form Ethereum's project, can be found in <a href="https://www.ethswarm.org/ecosystem.html" target="_blank">Grants and exosystem</a> page of Swarm's official site.
 <!--> #### Limitations and challenges <-->
