@@ -7,6 +7,7 @@
 **DNS**: Domain Name System. <!--<a href="" target="_blank">🌐</a> -->  
 **Ξ**: Ehereum symbol  
 **EVM**: Ethereum Virtual Machine  
+**IBC**: Inter-Blockchain Communication Protocol. An open‐source protocol to connect independent blockchains to one another.
 **IDE**: Integrated Development Environment. <a href="https://es.wikipedia.org/wiki/Entorno_de_desarrollo_integrado" target="_blank">🌐</a>  
 **IPLD**: InterPlanetary Linked Data.  
 **IPFS**: InterPlanetary File System.  
