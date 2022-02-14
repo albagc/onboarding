@@ -11,4 +11,6 @@
 **IPLD**: InterPlanetary Linked Data.  
 **IPFS**: InterPlanetary File System.  
 **IPNS**: InterPlanetary Naming System.  
+**NIST**: National Institute of Standards and Technology   
+**SHA-3**: Secure Hash Algorithm 3  
 
