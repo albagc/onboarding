@@ -13,5 +13,6 @@
 **IPFS**: InterPlanetary File System.  
 **IPNS**: InterPlanetary Naming System.  
 **NIST**: National Institute of Standards and Technology.
+**PKI**: Public Key Infrastructure.
 **SHA-3**: Secure Hash Algorithm 3.
 **SDK**: software development kit.
