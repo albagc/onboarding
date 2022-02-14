@@ -10,6 +10,10 @@ For the current value vs USD ($), see [here](https://currencio.co/eth/usd/).
 
 <br>
 
+### Hashing function
+
+Ethereum uses the Keccak-256 cryptograhpic hash function. Note that this is different from the standard SHA-3 (Secure Hash Algorithm 3) advocated by the National Institute of Standards and Technology (NIST). You can explore the results of this hasing function using [this tool](https://emn178.github.io/online-tools/keccak_256.html).
+
 ### Consensus mechanisms
 
 Ethereum is moving from proof-of-work (current) to proof-of-stake (new) - see [Test network](#test-networks) section for more details.
@@ -18,11 +22,13 @@ Ethereum is moving from proof-of-work (current) to proof-of-stake (new) - see [T
 
 > Proof-of-work blockchains are secured and verified by virtual miners around the world racing to be the first to solve a math puzzle. The winner gets to update the blockchain with the latest verified transactions and is rewarded  by the network with a predetermined amount of crypto. 
 
-Advantages include security (hackers would need to possess massive processing power) and robustness. Additionally, increasing value of the crypto results in an increasing incentive for more miners to partake.
+The idea is not to trust any central authority, but to _trust the computational power_ needed to make any chain valid. The key idea of the Proof of Work system is that the result should be difficult to find but easy to verify. For example:
 
-Major downside is the speed at which blocks are validated and the huge amount of electrcity required, resulting in a large carbon footprint.
+> Find a number `p` that when hashed with the previous block’s solution produces a hash with 4 leading 0s.
 
-In proof of work, the penalty for miners submitting invalid information, or blocks, is the sunk cost of computing power, energy, and time.
+This number `p` is difficult to find, as , but very easy to verify once found. In proof of work, the penalty for miners submitting invalid information, or blocks, is the sunk cost of computing power, energy, and time.
+
+Advantages include security (hackers would need to possess massive processing power) and robustness. Additionally, increasing value of the crypto results in an increasing incentive for more miners to partake. Major downside is the speed at which blocks are validated and the huge amount of electrcity required, resulting in a large carbon footprint.
 
 **Proof of stake (POS)**
 
@@ -97,3 +103,39 @@ _To create a new contract, you must send code that returns the code of the contr
 See [here](https://ethereum.org/en/developers/docs/evm/) for more details.
 
 ## Decentralised apps (dApps)
+
+Normal Web 2 applications look like this:
+
+![](https://uploads-ssl.webflow.com/5ddd80927946cdaa0e71d607/614ba7406b5b5f350682ab60_Screen%20Shot%202021-09-22%20at%205.59.02%20PM.png)
+
+<a href="https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application">
+         <img alt="Qries" src="https://uploads-ssl.webflow.com/5ddd80927946cdaa0e71d607/614ba7406b5b5f350682ab60_Screen%20Shot%202021-09-22%20at%205.59.02%20PM.png">
+</a>
+
+Front-end and back-end code, as well as the database, are hosted by a centralised service.
+
+In contrast, the infrastructure of a Web 3 app is slightly more complicated.
+
+<a href="https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application">
+         <img alt="Qries" src="https://uploads-ssl.webflow.com/5ddd80927946cdaa0e71d607/614bb2efff06e818e12a57f2_Screen%20Shot%202021-09-22%20at%206.49.04%20PM.png">
+</a>
+
+**Basic features:**
+
+1. The user interacts with the front-end code via a web browser.
+1. Front-end code is hosted on a web-server, or for true decentralisation, can be hosted on a distributed file storage system such as IPFS (see the [Decentralised File Storage](decen_file_storage.md) page for more details).
+1.  The back-end logic is managed by a series of smart contracts hosted on the blockchain. 
+1. To interact with the blockchain, we need to either host our own node (which can be challenging) or use a provider such as Infura or Alchemy.
+1. Data is stored on distributed file storage systems such as IPFS, which again either requires hosting a node locally or using a provider such as Infura.
+1. View the blockchain's state does not require any signature (reading is permissive), but to submit a transaction to the chain, it must be signed (writing is restricted). This is managed by MetaMask.
+
+**Additional features:**
+
+7. *The Graph*: indexes blockchain data to allow for low-latency querying of on-chain data in our application logic .
+8. *L2 scaling solutions (Polygon, Optimistic Round-up)*: these solutions "batch" multiple transactions off-chain using a “rollup” smart contract and then periodically commit these transactions to the main chain. Enable ready scaling of a dApp by allowing a large part of the work to take place off the central chain.   
+
+## **Further reading**
+
+* [Architecture of a Web 3.0 application](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - this is a really good overview of the difference between web2 and web3 applications.
+* [What are dApps: A 2021 guide to decentralized applications](https://limechain.tech/blog/what-are-dapps-the-2021-guide/)
+* [State of dApps](https://www.stateofthedapps.com) - repository of dApps built on varying platforms. Useful for inspiration.
