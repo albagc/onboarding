@@ -14,6 +14,8 @@ For the current value vs USD ($), see [here](https://currencio.co/eth/usd/).
 
 Ethereum uses the Keccak-256 cryptograhpic hash function. Note that this is different from the standard SHA-3 (Secure Hash Algorithm 3) advocated by the National Institute of Standards and Technology (NIST). You can explore the results of this hasing function using [this tool](https://emn178.github.io/online-tools/keccak_256.html).
 
+<br>
+
 ### Consensus mechanisms
 
 Ethereum is moving from proof-of-work (current) to proof-of-stake (new) - see [Test network](#test-networks) section for more details.
@@ -96,11 +98,15 @@ Blockchain transactions are messages sent from one account to another, and can c
 
 _To create a new contract, you must send code that returns the code of the contract you want, rather than just the code of the contract._ This is because when the target account is not set, the transaction creates a new contract by executing the binary data contained in the transaction. The output of this execution is then stored as the code of the contract. Note that while the contract is being created, the target address for that contract is empty. Be sure not to call the contract before it is fully created.
 
+<br>
+
 ## Ethereuem virtual machine
 
 > The Ethereum Virtual Machine or EVM is the runtime environment for smart contracts in Ethereum. It is not only sandboxed but actually completely isolated, which means that code running inside the EVM has no access to network, filesystem or other processes. Smart contracts even have limited access to other smart contracts.
 
 See [here](https://ethereum.org/en/developers/docs/evm/) for more details.
+
+<br>
 
 ## Decentralised apps (dApps)
 
@@ -121,14 +127,6 @@ In contrast, the infrastructure of a Web 3 app is slightly more complicated.
 </a>
 
 **Basic features:**
-
-```mermaid
-  graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
-```
 
 1. The user interacts with the front-end code via a web browser.
 1. Front-end code is hosted on a web-server, or for true decentralisation, can be hosted on a distributed file storage system such as IPFS (see the [Decentralised File Storage](decen_file_storage.md) page for more details).
