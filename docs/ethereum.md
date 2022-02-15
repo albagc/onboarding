@@ -122,6 +122,14 @@ In contrast, the infrastructure of a Web 3 app is slightly more complicated.
 
 **Basic features:**
 
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
+
 1. The user interacts with the front-end code via a web browser.
 1. Front-end code is hosted on a web-server, or for true decentralisation, can be hosted on a distributed file storage system such as IPFS (see the [Decentralised File Storage](decen_file_storage.md) page for more details).
 1.  The back-end logic is managed by a series of smart contracts hosted on the blockchain. 
