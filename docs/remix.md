@@ -1,5 +1,5 @@
 ## Remix
-> Resources:
+> Useful resources:
 > - <a href="https://remix-project.org/">Web of the project</a>;
 > - <a href="https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.7+commit.e28d00a7.js" target="_blank">Remix IDE</a>;
 > - <a href="https://remix-ide.readthedocs.io/en/latest/">Remix documentation</a>.
