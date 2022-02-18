@@ -1,4 +1,13 @@
-theme: jekyll-theme-slate
-show_downloads: false
+remote_theme: pmarsceill/just-the-docs
+search: true
 title: Onboarding/Docs
 description: Documentation for SMARDY project
+aux_links:
+  "View on GitHub":
+    - "//github.com/SMARDY-NCI/onboarding"
+
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: true
+
+# Use custom colour scheme
+color_scheme: foo
