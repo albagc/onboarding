@@ -1,3 +1,7 @@
+---
+nav_order: 1
+---
+
 ## Getting started
 
 * [Opening GitHub repo in VS code](https://docs.microsoft.com/en-us/visualstudio/get-started/tutorial-open-project-from-repo?view=vs-2022)
