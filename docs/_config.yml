@@ -13,4 +13,4 @@ aux_links_new_tab: true
 color_scheme: foo
 
 # Hide relative URL in search
-rel_url: true
+rel_url: false
